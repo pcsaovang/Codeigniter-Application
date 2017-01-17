@@ -1,14 +1,15 @@
 {
-	"description": "The CodeIgniter framework and blade template",
+	"description": "The CodeIgniter framework,Eloquent and blade template",
 	"name": "thanhtaivtt/codeigniter-application",
-	"author":"Thanh Tai",
 	"type": "project",
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",
 	"require": {
 		"thanhtaivtt/codeigniter-blade": "dev-master",
 		"thanhtaivtt/taiscript": "dev-master",
-		"xiaoler/blade": "0.*"
+		"xiaoler/blade": "0.*",
+		"php": ">=5.2.4",
+		"illuminate/database": "^5.3"
 	}
 	
 }

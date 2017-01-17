@@ -1,5 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+* using eloquent
+*/
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 /*
 | -------------------------------------------------------------------
@@ -70,6 +74,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+
+
 $active_group = 'default';
 $query_builder = TRUE;
 
@@ -94,3 +100,28 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+/**
+* eloquent class
+*/
+$capsule = new Capsule;
+/**
+* add connection for eloquent
+*/
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => $db['default']['hostname'],
+    'database'  => $db['default']['database'],
+    'username'  => $db['default']['username'],
+    'password'  => $db['default']['password'],
+    'charset'   => $db['default']['char_set'],
+    'collation' => $db['default']['dbcollat'],
+    'prefix'    => $db['default']['dbprefix'],
+]);
+/**
+* set Global
+*/
+$capsule->setAsGlobal();
+/**
+* boot eloquent
+*/
+$capsule->bootEloquent();
