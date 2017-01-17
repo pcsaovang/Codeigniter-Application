@@ -1,0 +1,47 @@
+#!/usr/bin/php -q
+<?php 
+require ('vendor/autoload.php');
+if(isset($_SERVER["argv"][1])){
+	$code=explode(':',$_SERVER["argv"][1]);
+	if(count($code)==2){
+		switch ($code[0]) {
+			case 'make':
+			switch ($code[1]) {
+				case 'controller':
+				if(isset($_SERVER['argv'][2]))
+					new taiscript\Controller($_SERVER['argv'][2]);
+				else
+					exit('missing: "name"');
+				break;
+				case 'model':
+				if(isset($_SERVER['argv'][2]))
+					new taiscript\model($_SERVER['argv'][2]);
+				else
+					exit('missing: "name"');
+				break;
+				case 'helper':
+				if(isset($_SERVER['argv'][2]))
+					new taiscript\helper($_SERVER['argv'][2]);
+				else
+					exit('missing: "name"');
+				break;
+				case 'library':
+				if(isset($_SERVER['argv'][2]))
+					new taiscript\library($_SERVER['argv'][2]);
+				else
+					exit('missing: "name"');
+				break;
+			}
+			break;
+		}
+	}
+	else{
+		echo "    
+		make:controller \t Create controller
+		make:model \t\t Create model
+		make:helper \t\t Create helper
+		make:library \t\t Create library
+
+	";
+}
+}
