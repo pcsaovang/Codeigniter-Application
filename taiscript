@@ -9,25 +9,25 @@ if(isset($_SERVER["argv"][1])){
 			switch ($code[1]) {
 				case 'controller':
 				if(isset($_SERVER['argv'][2]))
-					new taiscript\Controller($_SERVER['argv'][2]);
+					new thanhtaivtt\taiscript\taiscript\Controller($_SERVER['argv'][2]);
 				else
 					exit('missing: "name"');
 				break;
 				case 'model':
 				if(isset($_SERVER['argv'][2]))
-					new taiscript\model($_SERVER['argv'][2]);
+					new thanhtaivtt\taiscript\taiscript\model($_SERVER['argv'][2]);
 				else
 					exit('missing: "name"');
 				break;
 				case 'helper':
 				if(isset($_SERVER['argv'][2]))
-					new taiscript\helper($_SERVER['argv'][2]);
+					new thanhtaivtt\taiscript\taiscript\helper($_SERVER['argv'][2]);
 				else
 					exit('missing: "name"');
 				break;
 				case 'library':
 				if(isset($_SERVER['argv'][2]))
-					new taiscript\library($_SERVER['argv'][2]);
+					new tthanhtaivtt\taiscript\taiscript\library($_SERVER['argv'][2]);
 				else
 					exit('missing: "name"');
 				break;
