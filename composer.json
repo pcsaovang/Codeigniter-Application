@@ -12,12 +12,7 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"thanhtaivtt/codeigniter": "dev-master"
-	},
-	"suggest": {
-		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
-	},
-	"require-dev": {
-		"mikey179/vfsStream": "1.1.*"
+		"thanhtaivtt/codeigniter-blade": "dev-master"
 	}
+	
 }
