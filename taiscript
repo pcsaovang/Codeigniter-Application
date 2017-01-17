@@ -27,7 +27,7 @@ if(isset($_SERVER["argv"][1])){
 				break;
 				case 'library':
 				if(isset($_SERVER['argv'][2]))
-					new tthanhtaivtt\Taiscript\Taiscript\Library($_SERVER['argv'][2]);
+					new thanhtaivtt\Taiscript\Taiscript\Library($_SERVER['argv'][2]);
 				else
 					exit('missing: "name"');
 				break;
