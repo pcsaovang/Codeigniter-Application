@@ -12,7 +12,9 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"thanhtaivtt/codeigniter-blade": "dev-master"
+		"thanhtaivtt/codeigniter-blade": "dev-master",
+		"thanhtaivtt/codeigniter-script": "dev-master",
+		"xiaoler/blade": "0.*"
 	}
 	
 }
