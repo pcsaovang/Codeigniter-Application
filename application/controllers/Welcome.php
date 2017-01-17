@@ -22,12 +22,9 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
-        $data = array(
-            
-        );
         $this->view('sub.path',[
-            'title' => 'Blade template engine for Codeigniter 3.0+',
-            'content' => 'Blade template engine for Codeigniter']
-            );
+                    'title' => 'Blade template engine for Codeigniter 3.0+',
+                    'content' => 'Blade template engine for Codeigniter'
+                ]);
     }
 }
