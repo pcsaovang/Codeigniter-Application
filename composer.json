@@ -13,7 +13,7 @@
 	},
 	"require": {
 		"thanhtaivtt/codeigniter-blade": "dev-master",
-		"thanhtaivtt/codeigniter-script": "dev-master",
+		"thanhtaivtt/taiscript": "dev-master",
 		"xiaoler/blade": "0.*"
 	}
 	
