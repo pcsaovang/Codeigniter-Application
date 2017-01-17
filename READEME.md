@@ -17,6 +17,7 @@ $ composer install
 ### Using the taiscript
 
 **Example:**
+
 	```sh
 $ php taiscript make:controller HomeController
 ```
